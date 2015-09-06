@@ -40,7 +40,7 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active">
-							<a href="#">Home <span class="sr-only">(current)</span></a>
+							<a href="index.php">Home <span class="sr-only">(current)</span></a>
 						</li>
 						<li>
 							<a href="#">Activities &amp; Outings</a>
