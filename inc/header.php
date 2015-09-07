@@ -44,10 +44,10 @@
 							<a href="index.php">Home <span class="sr-only">(current)</span></a>
 						</li>
 						<li>
-							<a href="#">Activities &amp; Outings</a>
+							<a href="activities.php">Activities &amp; Outings</a>
 						</li>
 						<li>
-							<a href="#">Meals &amp; Diets</a>
+							<a href="meals.php">Meals &amp; Diets</a>
 						</li>
 						<li>
 							<a href="#">Accomodation</a>
