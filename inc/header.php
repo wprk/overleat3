@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="css/main.css">
 
 		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 	<!--[if lt IE 8]>
@@ -57,7 +58,7 @@
 						<li>
 							<a href="#">Why choose Overleat?</a>
 						</li>
-						<li>
+						<li class="active">
 							<a href="contact.php">Contact Us</a>
 						</li>
 					</ul>
