@@ -2,8 +2,9 @@
 	<div class="container">
 		<div class="row">
 			<div id="content" class="col-xs-12 col-md-8 col-lg-8 pull-right">
+				<h1>Welcome to Overleat</h1>
 				<p class="lead">
-					Here at Overleat, we are very proud of our home and the
+					At Overleat we are very proud of our home and the
 					quality of our care and we would love to have the
 					opportunity to show you around and let you see our
 					facilities, meet our residents and staff and get an
@@ -41,8 +42,8 @@
 								<div>
 									<span>Accomodation</span>
 								</div>
-							</a>					
-						</div>	
+							</a>
+						</div>
 						<div class="row">
 							<a href="#" class="col-xs-4 link-box-container respite">
 								<div>
@@ -58,8 +59,8 @@
 								<div>
 									<span>Contact Us</span>
 								</div>
-							</a>					
-						</div>	
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
