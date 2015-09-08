@@ -28,12 +28,12 @@
 				<div class="row">
 					<div class="hidden-xs">
 						<div class="row">
-							<a href="#" class="col-xs-4 link-box-container activities">
+							<a href="activities.php" class="col-xs-4 link-box-container activities">
 								<div>
 									<span>Activities &amp; Outings</span>
 								</div>
 							</a>
-							<a href="#" class="col-xs-4 link-box-container meals">
+							<a href="meals.php" class="col-xs-4 link-box-container meals">
 								<div>
 									<span>Meals &amp; Diets</span>
 								</div>

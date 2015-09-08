@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="row">
 			<div id="content" class="col-xs-12 col-md-8 col-lg-8 pull-right contact">
-				<h1>Drop us a message:</h1>
+				<h1>Any questions? send us a message</h1>
 				<form id="contactForm" role="form" method="post" action="inc/send_email.php">
 					<div class="form-group">
 						<span class="error-msg"><?php echo $_SESSION['error_name']; ?></span>
