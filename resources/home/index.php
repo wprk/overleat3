@@ -27,34 +27,34 @@
 			<div class="row">
 				<div class="hidden-xs">
 					<div class="row">
-						<a href="activities-and-outings" class="col-xs-4 link-box-container activities">
+						<a href="<?= ROOT_PATH; ?>/activities-and-outings" class="col-xs-4 link-box-container activities">
 							<div>
 								<span>Activities &amp; Outings</span>
 							</div>
 						</a>
-						<a href="meals-and-diets" class="col-xs-4 link-box-container meals">
+						<a href="<?= ROOT_PATH; ?>/meals-and-diets" class="col-xs-4 link-box-container meals">
 							<div>
 								<span>Meals &amp; Diets</span>
 							</div>
 						</a>
-						<a href="accomodation" class="col-xs-4 link-box-container accomodation">
+						<a href="<?= ROOT_PATH; ?>/accomodation" class="col-xs-4 link-box-container accomodation">
 							<div>
 								<span>Accomodation</span>
 							</div>
 						</a>
 					</div>
 					<div class="row">
-						<a href="respite-care" class="col-xs-4 link-box-container respite">
+						<a href="<?= ROOT_PATH; ?>/respite-care" class="col-xs-4 link-box-container respite">
 							<div>
 								<span>Respite Care</span>
 							</div>
 						</a>
-						<a href="why-choose-overleat" class="col-xs-4 link-box-container why-overleat">
+						<a href="<?= ROOT_PATH; ?>/why-choose-overleat" class="col-xs-4 link-box-container why-overleat">
 							<div>
 								<span>Why choose Overleat?</span>
 							</div>
 						</a>
-						<a href="contact-us" class="col-xs-4 link-box-container contact">
+						<a href="<?= ROOT_PATH; ?>/contact-us" class="col-xs-4 link-box-container contact">
 							<div>
 								<span>Contact Us</span>
 							</div>

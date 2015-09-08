@@ -1,10 +1,10 @@
 <div class="container">
 	<div class="row">
-		<div id="content" class="col-xs-12 col-md-8 col-lg-8 pull-right contact">
+		<div id="content" class="col-xs-12 col-md-8 col-lg-8 pull-right accomodation">
 			<h1>Accomodation</h1>
 			<div class="row">
 				<div class="hidden-xs col-sm-5">
-					<img src="http://placehold.it/300x200" class="img-responsive">
+					<img src="<?= IMG_PATH; ?>/accomodation/bedroom.jpg" class="img-responsive">
 				</div>
 				<div class="col-xs-12 col-sm-7">
 					<p>
@@ -16,10 +16,10 @@
 			</div>
 			<div class="spacer20"></div>
 			<div class="row">
-				<div class="hidden-xs col-sm-5 pull-right">
-					<img src="http://placehold.it/300x350" class="img-responsive">
+				<div class="hidden-xs col-sm-5">
+					<img src="<?= IMG_PATH; ?>/accomodation/activity-room.jpg" class="img-responsive">
 				</div>
-				<div class="col-xs-12 col-sm-7 text-right">
+				<div class="col-xs-12 col-sm-7">
 					<p>
 						Two lounges are available for those taking part in
 						activities, enjoying company or we have a lounge
@@ -36,7 +36,7 @@
 			<div class="spacer20"></div>
 			<div class="row">
 				<div class="hidden-xs col-sm-5">
-					<img src="http://placehold.it/300x200" class="img-responsive">
+					<img src="<?= IMG_PATH; ?>/accomodation/pets-welcome.jpg" class="img-responsive">
 				</div>
 				<div class="col-xs-12 col-sm-7">
 					<p>
@@ -44,6 +44,12 @@
 					</p>
 				</div>
 			</div>
+
+			<div class="spacer20"></div>
+			<script type="text/javascript" src="//www.cqc.org.uk/sites/all/mod
+				ules/custom/cqc_widget/widget.js?data-id=1-296083943&data-
+				host=www.cqc.org.uk&type=location">
+			</script>
 		</div>
 	</div>
 </div>

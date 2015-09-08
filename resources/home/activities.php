@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="row">
-		<div id="content" class="col-xs-12 col-md-8 col-lg-8 pull-right contact">
+		<div id="content" class="col-xs-12 col-md-8 col-lg-8 pull-right activities">
 			<h1>Activities &amp; Outings</h1>
 			<p>
 				Overleat employs an activities coordinator who will

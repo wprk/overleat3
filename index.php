@@ -2,6 +2,16 @@
 	// define a working directory
 	define('APP_PATH', getcwd()); // PHP v5.3+
 
+	if(getenv(APP_ENV) == 'development') {
+		define('ROOT_PATH', '/overleat3');
+		define('ASSET_PATH', '/overleat3/assets');
+		define('IMG_PATH', '/overleat3/assets/img');
+	} else {
+		define('ROOT_PATH', '/new');
+		define('ASSET_PATH', '/new/assets');
+		define('IMG_PATH', '/new/assets/img');
+	}
+
 	// load
 	require APP_PATH . '/vendor/autoload.php';
 

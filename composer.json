@@ -2,7 +2,8 @@
     "require": {
         "slimcontroller/slimcontroller": "0.4.3",
 		"respect/validation": "*",
-        "phpmailer/phpmailer": "^5.2"
+        "phpmailer/phpmailer": "^5.2",
+        "twbs/bootstrap": "^3.3"
     },
     "autoload": {
         "psr-0": {

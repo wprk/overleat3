@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="row">
-		<div id="content" class="col-xs-12 col-md-8 col-lg-8 pull-right contact">
+		<div id="content" class="col-xs-12 col-md-8 col-lg-8 pull-right why">
 			<h1>Why choose Overleat?</h1>
 			<p>
 				We feel Here at Overleat we are really  a cut above the rest and second only to
@@ -43,13 +43,10 @@
 				individual needs, abilities and aspirations. Resident centred care is at the heart of our philosophy.
 			</p>
 
-			<div class="spacer20"></div>
-
 			<p class="lead text-center">
 				If you would like to know more about our Residential Home, or arrange an informal visit, please 
 				contact Sally the Manager at the Home directly.
 			</p>
-
 		</div>
 	</div>
 </div>

@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="row">
-		<div id="content" class="col-xs-12 col-md-8 col-lg-8 pull-right contact">
+		<div id="content" class="col-xs-12 col-md-8 col-lg-8 pull-right respite">
 			<h1>Respite Care</h1>
 			<p>
 				Here at Overleat we understand that not everybody requires long-term, permanent
