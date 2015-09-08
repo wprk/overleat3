@@ -46,10 +46,12 @@
 			</div>
 
 			<div class="spacer20"></div>
+			
 			<script type="text/javascript" src="//www.cqc.org.uk/sites/all/mod
 				ules/custom/cqc_widget/widget.js?data-id=1-296083943&data-
 				host=www.cqc.org.uk&type=location">
 			</script>
+			<div class="spacer20"></div>
 		</div>
 	</div>
 </div>

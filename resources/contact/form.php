@@ -17,7 +17,7 @@
 				</div>
 				<div class="form-group">
 					<span class="error-msg"><?php echo $error_message; ?></span>
-					<textarea placeholder="Message" name="message" id="message" class="form-control" cols="100" rows="10"><?php echo $message; ?></textarea>
+					<textarea placeholder="Message" name="message" id="message" class="form-control" rows="6"><?php echo $message; ?></textarea>
 				</div>
 				<div class="form-group">
 					<span class="error-msg"><?php echo $error_recaptcha; ?></span>
