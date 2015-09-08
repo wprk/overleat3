@@ -1,0 +1,12 @@
+{
+    "require": {
+        "slimcontroller/slimcontroller": "0.4.3",
+		"respect/validation": "*",
+        "phpmailer/phpmailer": "^5.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "Overleat": "src/"
+        }
+    }
+}

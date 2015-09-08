@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!doctype html>
 	<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 	<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -35,32 +34,32 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.php">Overleat Care Home</a>
+					<a class="navbar-brand" href="./">Overleat Care Home</a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active">
-							<a href="index.php">Home <span class="sr-only">(current)</span></a>
+						<li<?php if ($active == 'home'): echo ' class="active"'; endif; ?>>
+							<a href="./">Home <span class="sr-only">(current)</span></a>
 						</li>
-						<li>
-							<a href="activities.php">Activities &amp; Outings</a>
+						<li<?php if ($active == 'activities'): echo ' class="active"'; endif; ?>>
+							<a href="activities-and-outings">Activities &amp; Outings</a>
 						</li>
-						<li>
-							<a href="meals.php">Meals &amp; Diets</a>
+						<li<?php if ($active == 'meals'): echo ' class="active"'; endif; ?>>
+							<a href="meals-and-diets">Meals &amp; Diets</a>
 						</li>
-						<li>
-							<a href="#">Accomodation</a>
+						<li<?php if ($active == 'accomodation'): echo ' class="active"'; endif; ?>>
+							<a href="accomodation">Accomodation</a>
 						</li>
-						<li>
-							<a href="#">Respite Care</a>
+						<li<?php if ($active == 'respite'): echo ' class="active"'; endif; ?>>
+							<a href="respite-care">Respite Care</a>
 						</li>
-						<li>
-							<a href="#">Why choose Overleat?</a>
+						<li<?php if ($active == 'why'): echo ' class="active"'; endif; ?>>
+							<a href="why-choose-overleat">Why choose Overleat?</a>
 						</li>
-						<li class="active">
-							<a href="contact.php">Contact Us</a>
+						<li<?php if ($active == 'contact'): echo ' class="active"'; endif; ?>>
+							<a href="contact-us">Contact Us</a>
 						</li>
 					</ul>
 				</div><!-- /.navbar-collapse -->

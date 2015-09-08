@@ -1,6 +1,6 @@
 	<footer>
 		<div class="container">
-			<p>Overleat Care Home &copy; <?php echo date('Y'); ?></p>
+			<p>Overleat Care Home &copy; <?php echo $copyrightYear; ?></p>
 		</div>
 	</footer>
 
