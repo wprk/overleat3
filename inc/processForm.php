@@ -1,12 +1,12 @@
 <?php
-	session_start();
-	$result = checkData();
+	function processForm()
+	{
+		$result = checkData();
 
-	if($result === TRUE) {
-		sendEmail();
-		header('Location: ../contact2.php');
-	} else {
-		header('Location: ../contact.php');
+		if ($result === TRUE) {
+			sendEmail();
+			header('Location: http://localhost/overleat3/contact2.php');
+		}
 	}
 
 	function checkData()
@@ -18,7 +18,7 @@
 			$_SESSION['error_name'] = 'Please enter your full name.';
 		}
 
-		if (!isset($_POST['email']) || strlen($_POST['email']) < 5)) {
+		if (!isset($_POST['email']) || strlen($_POST['email']) < 5) {
 			$success = FALSE;
 			$_SESSION['error_email'] ='Please enter a your e-mail address.';
 		} else {
@@ -28,7 +28,7 @@
 			}
 		}
 
-		if (!isset($_POST['phone']) || strlen($_POST['phone']) < 5)) {
+		if (!isset($_POST['phone']) || strlen($_POST['phone']) < 5) {
 			$success = FALSE;
 			$_SESSION['error_phone'] ='Please enter a your phone number.';
 		} else {
@@ -38,7 +38,7 @@
 			}
 		}
 
-		if (!isset($_POST['message']) || strlen($_POST['message']) < 5)) {
+		if (!isset($_POST['message']) || strlen($_POST['message']) < 5) {
 			$success = FALSE;
 			$_SESSION['error_message'] = 'Please enter your message.';
 		}
@@ -67,22 +67,26 @@
 			),
 		);
 		$context  = stream_context_create($options);
-		$result = file_get_contents($url, FALSE, $context);
+		$result = json_decode(file_get_contents($url, FALSE, $context), TRUE);
 
-		return $result['success'];
+		if($result['success'] === TRUE) {
+			return TRUE;
+		} else {
+			return FALSE;
+		}
 	}
 
 	function validEmail($email)
 	{
-		return true;
+		return TRUE;
 	}
 
 	function validPhone($phone)
 	{
-		return true;
+		return TRUE;
 	}
 
 	function sendEmail()
 	{
-		return true;
+		return TRUE;
 	}
