@@ -5,6 +5,12 @@
         "phpmailer/phpmailer": "^5.2",
         "twbs/bootstrap": "^3.3"
     },
+    "require-dev": {
+        "fabpot/php-cs-fixer": "^1.10"
+    },
+    "scripts": {
+        "cs": "php-cs-fixer fix"
+    },
     "autoload": {
         "psr-0": {
             "Overleat": "src/"
