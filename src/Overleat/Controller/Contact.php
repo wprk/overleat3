@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the Overleat Care Home Website package.
+ *
+ * (c) Will Parker <will@wipar.co.uk>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Overleat\Controller;
 
 use Respect\Validation\Validator;
@@ -13,7 +22,7 @@ class Contact extends \SlimController\SlimController
             'email' => $this->request()->post('email', ''),
             'phone' => $this->request()->post('phone', ''),
             'message' => $this->request()->post('message', ''),
-            'g-recaptcha-response' => $this->request()->post('g-recaptcha-response', '')
+            'g-recaptcha-response' => $this->request()->post('g-recaptcha-response', ''),
         );
 
         $errors = array(
@@ -21,7 +30,7 @@ class Contact extends \SlimController\SlimController
             'error_email' => '',
             'error_phone' => '',
             'error_message' => '',
-            'error_recaptcha' => ''
+            'error_recaptcha' => '',
         );
 
         if ($this->request()->isPost()) {
@@ -29,27 +38,27 @@ class Contact extends \SlimController\SlimController
         }
 
         $this->render('partials/header', array(
-            'active' => 'contact'
+            'active' => 'contact',
         ));
         $this->render('contact/form', array_merge(
             $formValues,
             $errors
         ));
         $this->render('partials/footer', array(
-            'copyrightYear' => date('Y')
+            'copyrightYear' => date('Y'),
         ));
     }
 
     public function successAction()
     {
         $this->render('partials/header', array(
-            'active' => 'contact'
+            'active' => 'contact',
         ));
         $this->render('contact/success', array(
 
         ));
         $this->render('partials/footer', array(
-            'copyrightYear' => date('Y')
+            'copyrightYear' => date('Y'),
         ));
     }
 
@@ -74,17 +83,17 @@ class Contact extends \SlimController\SlimController
         }
 
         if (!isset($data['email']) || strlen($data['email']) < 5) {
-            $errors['error_email'] ='Please enter a your e-mail address.';
+            $errors['error_email'] = 'Please enter a your e-mail address.';
         } else {
-            if(!$this->_validEmail($data['email'])) {
+            if (!$this->_validEmail($data['email'])) {
                 $errors['error_email'] = 'Please enter a valid e-mail address.';
             }
         }
 
         if (!isset($data['phone']) || strlen($data['phone']) < 5) {
-            $errors['error_phone'] ='Please enter a your phone number.';
+            $errors['error_phone'] = 'Please enter a your phone number.';
         } else {
-            if(!$this->_validPhone($data['phone'])) {
+            if (!$this->_validPhone($data['phone'])) {
                 $errors['error_phone'] = 'Please enter a valid phone number.';
             }
         }
@@ -105,7 +114,7 @@ class Contact extends \SlimController\SlimController
         $url = 'https://www.google.com/recaptcha/api/siteverify';
         $data = array(
             'secret' => '6Ld2eQwTAAAAAKImz5TZKJcBaqrm0fq77M3VjcLT',
-            'response' => $captcha
+            'response' => $captcha,
         );
 
         $options = array(
@@ -116,12 +125,12 @@ class Contact extends \SlimController\SlimController
             ),
         );
         $context  = stream_context_create($options);
-        $result = json_decode(file_get_contents($url, FALSE, $context), TRUE);
+        $result = json_decode(file_get_contents($url, false, $context), true);
 
-        if($result['success'] === TRUE) {
-            return TRUE;
+        if ($result['success'] === true) {
+            return true;
         } else {
-            return FALSE;
+            return false;
         }
     }
 
@@ -144,15 +153,15 @@ class Contact extends \SlimController\SlimController
         $mail->FromName = $data['name'];
 
         //To address and name
-        $mail->addAddress("wprk14@gmail.com", "Ian Fletcher");
+        $mail->addAddress('wprk14@gmail.com', 'Ian Fletcher');
 
         //Address to which recipient will reply
-        $mail->addReplyTo($data['email'], "Reply to " . $data['name']);
+        $mail->addReplyTo($data['email'], 'Reply to ' . $data['name']);
 
         //Send HTML or Plain Text email
         $mail->isHTML(true);
 
-        $mail->Subject = "Message from Overleat Website.";
+        $mail->Subject = 'Message from Overleat Website.';
         $mail->Body = $data['message'];
         $mail->AltBody = $data['message'];
         $mail->send();
